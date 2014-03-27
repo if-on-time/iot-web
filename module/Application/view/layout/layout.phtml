@@ -6,7 +6,7 @@ namespace Application;
 <html>
     <head>
         <meta charset="utf-8">
-        <?php echo $this->headTitle('Project Collaby')->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?php echo $this->headTitle('IF on time')->setSeparator(' - ')->setAutoEscape(false) ?>
         <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
         <!-- Le styles -->
         <?php
@@ -40,18 +40,6 @@ namespace Application;
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?php echo $this->url('home') ?>">
                                 <?php echo $this->translate('Home', __NAMESPACE__) ?></a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-file"></i><b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo $this->url('new-document', array('type' => 'latex')) ?>">
-												<?php echo $this->translate('Document'); ?>
-												</a></li>
-                                <li><a href="<?php echo $this->url('new-document', array('type' => 'beamer')) ?>">
-												<?php echo $this->translate('Presentation'); ?>
-												</a></li>
-                            </ul>
                         </li>
                         <li>
                             <a href="<?php echo $this->url('about') ?>">

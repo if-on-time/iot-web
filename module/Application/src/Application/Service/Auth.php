@@ -92,7 +92,7 @@ class Auth extends Service {
     * @return boolean
     */
    public function authorize($moduleName, $controllerName, $actionName) {
-      $auth = new AuthenticationService();
+      /*$auth = new AuthenticationService();
       $role = Auth::DEFAULT_ROLE;
       if ($auth->hasIdentity()) {
          $session = $this->getServiceManager()->get('Session');
@@ -104,7 +104,8 @@ class Auth extends Service {
       if ($acl->isAllowed($role, $resource)) {
          return true;
       }
-      return false;
+      return false;*/
+      return true;
    }
 
 }

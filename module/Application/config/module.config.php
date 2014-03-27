@@ -102,7 +102,8 @@ return array(
         'factories' => array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
             'Session' => function($sm) {
-                return new \Zend\Session\Container('if-on-time');
+                //return new \Zend\Session\Container('ZF2napratica');
+                return new \Zend\Session\Container('ifontime');
             },
             'Application\Service\Auth' => function($sm) {
                 $dbAdapter = $sm->get('DbAdapter');

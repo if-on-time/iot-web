@@ -11,6 +11,7 @@
       "php": ">=5.3.3",
       "zendframework/zendframework": "2.*",
       "phpunit/phpunit": "3.7.*",
-      "sebastian/environment": "1.0.*@dev"
+      "sebastian/environment": "1.0.*@dev",
+      "zendframework/zftool": "dev-master"
    }
 }
