@@ -64,6 +64,29 @@ return array(
                     ),
                 ),
             ),
+            'notificacao-index' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/notificacao',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Notificacao',
+                        'action'     => 'index',
+                        'module'     => 'application',
+                    ),
+                ),
+            ),
+            // rota simplificada para escrever menos :)
+            'notificacao-tv' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route'    => '/tv',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Notificacao',
+                        'action'     => 'index',
+                        'module'     => 'application',
+                    ),
+                ),
+            ),
             'application' => array(
                 'type'    => 'Literal',
                 'options' => array(
@@ -127,6 +150,7 @@ return array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\Auth' => 'Application\Controller\AuthController',
             'Application\Controller\Account' => 'Application\Controller\AccountController',
+            'Application\Controller\Notificacao' => 'Application\Controller\NotificacaoController',
         ),
     ),
     'view_manager' => array(
